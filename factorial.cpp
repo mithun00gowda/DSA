@@ -1,18 +1,17 @@
 #include<iostream>
 using namespace std;
 
-int fact(int num){
-    int fact=1;
-    for(int i=2;i<=num;i++){
-        fact *= i;
-    }
-    return fact;
+int factorial(int n){
+    if (n == 0) 
+            return 1; 
+  
+    return n * factorial(n - 1);
 }
 
 int main(){
     int n;
     cin>>n;
-    int ans=fact(n);
+    int ans=factorial(n);
     cout<<ans<<endl;
 
 }

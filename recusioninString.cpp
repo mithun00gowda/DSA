@@ -8,6 +8,8 @@ void reverse(string s){
     }
 
     string ros = s.substr(1);
+    cout<<ros<<endl;
+    cout<<s[0]<<endl;
     reverse(ros);
     cout<<s[0];
 }
